@@ -9,9 +9,10 @@ if(isset($_POST['submit'])){
   $concernp = htmlspecialchars($_POST['concernp']);
 
    $query .= " where Concern_Person = '$concernp'";
-	
+
 
   }
+  
 
  $result = mysqli_query($conn,$query);
 
@@ -99,7 +100,7 @@ if(isset($_POST['submit'])){
                        <option value="Pradnya Gite">Pradnya Gite</option>
                        <option value="Sanket Ingale">Sanket Ingale</option>
                        <option value="Ruchika Shelke">Ruchika Shelke</option>
-                       <option value="Varsha Ajith">Varsha Ajith</option> 
+                       <option value="Varsha Ajith">Varsha Ajith</option>
                       </select></div>
                       <div class="col-md-3">
                       <input type="submit" name="submit" class="btn btn-success">
